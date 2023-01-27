@@ -27,7 +27,7 @@ const Register = () => {
         try {
             await axios({
                 method: 'POST',
-                url: 'http://localhost:7878/user/register',
+                url: `${process.env.REACT_APP_API}/user/register`,
                 data: register
             })
             Swal.fire({

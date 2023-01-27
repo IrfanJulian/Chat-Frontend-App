@@ -13,7 +13,7 @@ const Chtaroom = () => {
     const [messages, setMessages] = useState([])
 
     useEffect(()=>{
-        const resultSocket = io(`http://localhost:7878`)
+        const resultSocket = io(`${process.env.REACT_APP_API}`)
         setSocket(resultSocket)
         resultSocket.emit('initRoom', { room: searchParams.get('group'), username: searchParams.get('name') })
         setGroup(searchParams.get('group'))

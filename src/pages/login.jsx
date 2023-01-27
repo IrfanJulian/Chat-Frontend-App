@@ -25,14 +25,14 @@ const Login = ({ setSocket }) => {
         try {
             const res = await axios({
                 method: 'POST',
-                url: `http://localhost:7878/user/login`,
+                url: `${process.env.REACT_APP_API}/user/login`,
                 data: credential
             })
             const respData = res.data.data
             localStorage.setItem('token', respData.token)
             localStorage.setItem('id', respData.id)
             localStorage.setItem('username', respData.username)
-            const resSocket = io(`http://localhost:7878`, {
+            const resSocket = io(`${process.env.REACT_APP_API}`, {
                 query: {
                     token: respData.token
                 }

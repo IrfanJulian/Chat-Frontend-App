@@ -8,11 +8,9 @@ import cancelIcon from '../assets/cancel.png'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import ScrollToBottom from 'react-scroll-to-bottom';
-// import { useNavigate } from 'react-router-dom'
 
 const RoomChat = ({socket}) => {
 
-  // const navigate = useNavigate()
   const idLocal = localStorage.getItem('id')
   const token = localStorage.getItem('token')
   const [setting, setSetting] = useState(false)
@@ -21,33 +19,28 @@ const RoomChat = ({socket}) => {
   const [friends, setFriends] = useState()
   const [choose, setChoose] = useState()
   const [profile, setProfile] = useState()
-  // const [profilePict, setProfilePict] = useState()
   const [photo, setPhoto] = useState([])
-  // const [msg, setMsg] = useState()
-  // console.log(chat);
 
   useEffect(()=>{
     const getProfile = async () => {
       const res = await axios({
         method: 'GET',
-        url: `http://localhost:7878/user/profile/${idLocal}`,
+        url: `${process.env.REACT_APP_API}/user/profile/${idLocal}`,
         headers: {
           authorization: `Bearer ${token}`
         }
       })
       setProfile(res.data.data[0])
-      // setProfilePict(res.data.data[0].photo)
     }
     getProfile()
   }, [idLocal, token])
-  // console.log(profilePict);
 
   useEffect(()=>{
     const getAll = async() => {
       try {
         const res = await axios({
           method: `GET`,
-          url: `http://localhost:7878/user`,
+          url: `${process.env.REACT_APP_API}/user`,
           headers: {
             authorization: `Bearer ${token}`
           }
@@ -65,7 +58,7 @@ const RoomChat = ({socket}) => {
       try {
         const res = await axios({
           method: `GET`,
-          url: `http://localhost:7878/chat/${choose.id}`,
+          url: `${process.env.REACT_APP_API}/chat/${choose.id}`,
           headers: {
             authorization: `Bearer ${token}`
           }
@@ -96,7 +89,7 @@ const RoomChat = ({socket}) => {
     try {
       await axios({
         method: 'PUT',
-        url: `http://localhost:7878/user/update/${idLocal}`,
+        url: `${process.env.REACT_APP_API}/user/update/${idLocal}`,
         data: formData,
         headers: {
           authorization: `Bearer ${token}`
@@ -134,10 +127,7 @@ const RoomChat = ({socket}) => {
 
   const chooseFriend=(friend)=>{
     setChoose(friend)
-    // setReciever2(friend.id)
   }
-  // console.log('ini chat ===', chat);
-  // console.log('ini choose ===', choose);
 
   return (
     <div>
