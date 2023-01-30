@@ -1,10 +1,10 @@
 # Fun Talks
-# ![Chat](https://funtalks.netlify.app/)
+# ![Chat](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/logo.png)
 Fun Talks is apllication that can connect everyone. You can talk by chat or phone everywhere and anytime.
 
 
 ## Repo
-Here is repository :  https://github.com/IrfanJulian/Chat-Frontend-App.git
+Here is repository :  https://funtalks.netlify.app/
 
 ### Landing Page
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/landing.png)
