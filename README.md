@@ -17,7 +17,7 @@ Here is repository :  https://github.com/IrfanJulian/Chat-Frontend-App.git
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/room%20chat.png)
 
 ### Edit Profile
-![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/change%20profile%20picture.png
+![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/change%20profile%20picture.png)
 
 ## [Usage](https://funtalks.netlify.app/) 
 
