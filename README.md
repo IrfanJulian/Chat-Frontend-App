@@ -1,41 +1,50 @@
 # Fun Talks
-# ![Chat](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/logo.png)
+![Chat](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/logo.png)
+### About Fun Talks Application
 Fun Talks is apllication that can connect everyone. You can talk by chat or phone everywhere and anytime.
 
+## Table Of Content
+- [API-Reference](#API-Reference)
+- [Getting-Started](#Getting-Started)
+- [Built-With](#Built-With)
+- [Demo](#Demo)
+- [Screenshot](#Screenshot)
+- [Created by](#Created)
 
-## Link
-Here id Demo : https://funtalks.netlify.app/
-Here is repository :  https://github.com/IrfanJulian/Chat-Frontend-App.git
+## API-Reference
+Github Repository: [Backend Fun Talks](https://github.com/IrfanJulian/Backend-Telegram.git)
 
+## Getting-Started
+### Installation
+Clone the application using npm :
+```bash
+git clone https://github.com/IrfanJulian/Chat-Frontend-App.git
+```
+Install this application using npm :
+```bash
+npm Install
+```
+
+## Built-With
+- [React JS](https://reactjs.org/)
+- [Socket io Client](https://socket.io/docs/v4/client-api/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React router dom](https://reactrouter.com/en/main)
+- [Axios](https://axios-http.com/docs/intro)
+- [Sweet Alert](https://sweetalert2.github.io/)
+
+## Demo
+https://funtalks.netlify.app/
+
+## Screenshot
 ### Landing Page
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/landing.png)
-
 ### Login
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/login.png)
-
 ### Chatting Room
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/room%20chat.png)
-
 ### Edit Profile
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/change%20profile%20picture.png)
-
-## [Usage](https://funtalks.netlify.app/) 
-
-### Development
-- Fork the repo
-- Create a new branch (`git checkout -b dev-1`)
-- Make the appropriate changes in the files
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -m 'First Commit'`)
-- Push to the branch (`git push origin dev-1`)
-- Create a Pull Request 
-
-
-## Built with 
-
-- [React JS](https://reactjs.org/) - A JavaScript library for building user interfaces.
-- [Tailwind CSS](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
-- [Socket io Client](https://socket.io/docs/v4/client-api/) - Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server.
 
 ## Created
 © [Irfan Julian](https://github.com/IrfanJulian)
