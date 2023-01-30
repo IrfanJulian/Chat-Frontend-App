@@ -16,7 +16,10 @@ function App() {
       const resSocket = io(`${process.env.REACT_APP_API}`, {
         query: {
           token: token
-        }
+        },
+        path: '/socket.io',
+        transports: ['websocket'],
+        secure: true,
       })
       setSocket(resSocket)
     }
