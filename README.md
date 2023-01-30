@@ -37,10 +37,10 @@ npm Install
 https://funtalks.netlify.app/
 
 ## Screenshot
-### Landing Page
-![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/landing.png)
 ### Login
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/login.png)
+### Landing Page
+![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/landing.png)
 ### Chatting Room
 ![](https://github.com/IrfanJulian/Chat-Frontend-App/blob/main/screenshot/room%20chat.png)
 ### Edit Profile
